@@ -1,9 +1,13 @@
-<!DOCTYPE html><html lang="en">
+Here is the full replacement HTML. Delete the old file content and paste this whole thing in its place.
+
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Michael Scott Handyman Services | Licensed & Insured</title>
   <meta name="description" content="Michael Scott Handyman Services provides licensed and insured roofing, decks, fencing, drywall, home additions, repairs, and more. Call 419-276-3850 for pricing and additional info." />
+
   <style>
     :root {
       --bg: #0d1117;
@@ -15,404 +19,870 @@
       --green: #2ea043;
       --shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
       --radius: 22px;
-    }* { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; }
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  background: var(--bg);
-  color: var(--white);
-  line-height: 1.6;
-  overflow-x: hidden;
-}
-a { color: inherit; text-decoration: none; }
+    }
 
-.top-banner {
-  background: linear-gradient(90deg, var(--gold), #ffe08a, var(--gold));
-  color: #1a1200;
-  text-align: center;
-  font-weight: 800;
-  padding: 10px 16px;
-  letter-spacing: 0.3px;
-}
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-header {
-  position: sticky;
-  top: 0;
-  z-index: 50;
-  backdrop-filter: blur(18px);
-  background: rgba(13, 17, 23, 0.82);
-  border-bottom: 1px solid rgba(255,255,255,0.08);
-}
+    html {
+      scroll-behavior: smooth;
+    }
 
-.nav {
-  max-width: 1180px;
-  margin: 0 auto;
-  padding: 16px 22px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 18px;
-}
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--white);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
 
-.brand { display: flex; align-items: center; gap: 12px; font-weight: 900; letter-spacing: 0.4px; }
-.logo {
-  width: 44px; height: 44px; border-radius: 14px;
-  background: linear-gradient(135deg, var(--gold), #fff3b0);
-  color: #171717; display: grid; place-items: center; font-weight: 900;
-  box-shadow: 0 8px 25px rgba(245,185,66,0.3);
-}
-.nav-links { display: flex; align-items: center; gap: 22px; color: var(--muted); font-size: 0.95rem; }
-.nav-links a:hover { color: var(--gold); }
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
 
-.call-btn {
-  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
-  background: linear-gradient(135deg, var(--gold), #ffd66b);
-  color: #171717; font-weight: 900; padding: 12px 18px;
-  border-radius: 999px; box-shadow: 0 12px 30px rgba(245,185,66,0.25);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  white-space: nowrap;
-}
-.call-btn:hover { transform: translateY(-2px); box-shadow: 0 16px 38px rgba(245,185,66,0.34); }
+    .top-banner {
+      background: linear-gradient(90deg, var(--gold), #ffe08a, var(--gold));
+      color: #1a1200;
+      text-align: center;
+      font-weight: 800;
+      padding: 10px 16px;
+      letter-spacing: 0.3px;
+    }
 
-.hero {
-  position: relative;
-  min-height: 86vh;
-  display: grid;
-  align-items: center;
-  overflow: hidden;
-  background:
-    radial-gradient(circle at top left, rgba(245,185,66,0.2), transparent 30%),
-    radial-gradient(circle at bottom right, rgba(31,111,235,0.24), transparent 35%),
-    linear-gradient(135deg, #0d1117 0%, #111827 50%, #0d1117 100%);
-}
-.hero::before {
-  content: ""; position: absolute; inset: 0;
-  background-image:
-    linear-gradient(rgba(255,255,255,0.035) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,0.035) 1px, transparent 1px);
-  background-size: 46px 46px;
-  mask-image: linear-gradient(to bottom, black, transparent 88%);
-}
-.hero-wrap {
-  position: relative; max-width: 1180px; margin: 0 auto; padding: 76px 22px;
-  display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 42px; align-items: center;
-}
-.badge {
-  display: inline-flex; align-items: center; gap: 8px;
-  padding: 9px 14px; border: 1px solid rgba(245,185,66,0.45);
-  background: rgba(245,185,66,0.09); color: #ffe2a0;
-  border-radius: 999px; font-weight: 800; margin-bottom: 20px;
-}
-h1 {
-  font-size: clamp(2.6rem, 6vw, 5.7rem);
-  line-height: 0.95;
-  letter-spacing: -3px;
-  margin-bottom: 24px;
-}
-.highlight { color: var(--gold); text-shadow: 0 0 30px rgba(245,185,66,0.22); }
-.hero p { color: var(--muted); font-size: clamp(1.05rem, 2vw, 1.25rem); max-width: 650px; margin-bottom: 30px; }
-.hero-actions { display: flex; gap: 14px; flex-wrap: wrap; align-items: center; }
-.secondary-btn {
-  display: inline-flex; align-items: center; justify-content: center;
-  border: 1px solid rgba(255,255,255,0.18); color: var(--white);
-  padding: 12px 18px; border-radius: 999px; font-weight: 800;
-  background: rgba(255,255,255,0.05); transition: background 0.2s ease, transform 0.2s ease;
-}
-.secondary-btn:hover { background: rgba(255,255,255,0.1); transform: translateY(-2px); }
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: blur(18px);
+      background: rgba(13, 17, 23, 0.82);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
 
-.hero-card {
-  background: linear-gradient(180deg, rgba(255,255,255,0.1), rgba(255,255,255,0.035));
-  border: 1px solid rgba(255,255,255,0.12);
-  border-radius: 34px;
-  padding: 24px;
-  box-shadow: var(--shadow);
-  transform: rotate(1.5deg);
-}
-.job-card { background: var(--panel); border-radius: 28px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1); }
-.job-photo {
-  min-height: 280px;
-  display: grid;
-  place-items: center;
-  background:
-    radial-gradient(circle at 22% 18%, rgba(255,255,255,0.35), transparent 18%),
-    linear-gradient(135deg, rgba(245,185,66,0.95), rgba(31,111,235,0.82)),
-    repeating-linear-gradient(45deg, transparent 0 12px, rgba(255,255,255,0.12) 12px 24px);
-  overflow: hidden;
-  position: relative;
-}
-.handyman-scene {
-  width: min(92%, 340px);
-  transform: translateY(8px);
-  filter: drop-shadow(0 20px 22px rgba(0,0,0,0.28));
-}
-.wave-arm {
-  transform-box: fill-box;
-  transform-origin: 24px 56px;
-  animation: waveHammer 1.45s ease-in-out infinite;
-}
-.hello-lines {
-  transform-origin: center;
-  animation: helloPulse 1.45s ease-in-out infinite;
-}
-@keyframes waveHammer {
-  0%, 100% { transform: rotate(-8deg); }
-  50% { transform: rotate(18deg); }
-}
-@keyframes helloPulse {
-  0%, 100% { opacity: 0.3; transform: scale(0.95); }
-  50% { opacity: 1; transform: scale(1.08); }
-}
-.job-body { padding: 24px; }
-.job-body h3 { font-size: 1.5rem; margin-bottom: 10px; }
-.check-list { list-style: none; color: var(--muted); display: grid; gap: 10px; margin-top: 18px; }
-.check-list li::before { content: "✓"; color: var(--green); font-weight: 900; margin-right: 10px; }
+    .nav {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 16px 22px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 18px;
+    }
 
-section { padding: 86px 22px; }
-.container { max-width: 1180px; margin: 0 auto; }
-.section-title { text-align: center; margin-bottom: 44px; }
-.section-title span { color: var(--gold); font-weight: 900; text-transform: uppercase; letter-spacing: 2px; font-size: 0.85rem; }
-.section-title h2 { font-size: clamp(2rem, 4vw, 3.4rem); line-height: 1.05; margin-top: 8px; letter-spacing: -1.5px; }
-.section-title p { color: var(--muted); max-width: 700px; margin: 14px auto 0; }
-.services { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
-.service-card {
-  position: relative; background: linear-gradient(180deg, var(--panel), var(--panel-2));
-  border: 1px solid rgba(255,255,255,0.1); border-radius: var(--radius);
-  padding: 28px; min-height: 230px; overflow: hidden;
-  transition: transform 0.25s ease, border-color 0.25s ease;
-}
-.service-card::after {
-  content: ""; position: absolute; width: 120px; height: 120px; right: -40px; top: -40px;
-  background: rgba(245,185,66,0.13); border-radius: 999px;
-}
-.service-card:hover { transform: translateY(-8px); border-color: rgba(245,185,66,0.45); }
-.icon { font-size: 2.1rem; margin-bottom: 18px; }
-.service-card h3 { font-size: 1.35rem; margin-bottom: 10px; }
-.service-card p { color: var(--muted); }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 900;
+      letter-spacing: 0.4px;
+    }
 
-.why { background: #090d13; }
-.why-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; align-items: center; }
-.feature-box { display: grid; gap: 16px; }
-.feature { display: flex; gap: 16px; padding: 20px; border-radius: var(--radius); background: rgba(255,255,255,0.045); border: 1px solid rgba(255,255,255,0.08); }
-.feature strong { display: block; margin-bottom: 4px; font-size: 1.1rem; }
-.feature p { color: var(--muted); }
-.big-number { font-size: clamp(4rem, 10vw, 8rem); color: var(--gold); font-weight: 900; line-height: 0.9; letter-spacing: -6px; }
-.quote-panel {
-  background: linear-gradient(135deg, rgba(245,185,66,0.14), rgba(31,111,235,0.14));
-  border: 1px solid rgba(255,255,255,0.12); border-radius: 32px; padding: 38px; box-shadow: var(--shadow);
-}
-.quote-panel h2 { font-size: clamp(2rem, 4vw, 3.4rem); line-height: 1; margin-bottom: 16px; }
-.quote-panel p { color: var(--muted); margin-bottom: 24px; }
+    .logo {
+      width: 44px;
+      height: 44px;
+      border-radius: 14px;
+      background: linear-gradient(135deg, var(--gold), #fff3b0);
+      color: #171717;
+      display: grid;
+      place-items: center;
+      font-weight: 900;
+      box-shadow: 0 8px 25px rgba(245,185,66,0.3);
+    }
 
-.process { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; counter-reset: step; }
-.step { background: var(--panel); border: 1px solid rgba(255,255,255,0.1); border-radius: var(--radius); padding: 24px; }
-.step::before {
-  counter-increment: step; content: "0" counter(step);
-  display: inline-grid; place-items: center; width: 44px; height: 44px; border-radius: 14px;
-  background: rgba(245,185,66,0.14); color: var(--gold); font-weight: 900; margin-bottom: 18px;
-}
-.step h3 { margin-bottom: 8px; }
-.step p { color: var(--muted); }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
 
-.cta {
-  padding: 86px 22px;
-  background: linear-gradient(135deg, rgba(245,185,66,0.18), rgba(31,111,235,0.18)), #0d1117;
-}
-.cta-card {
-  max-width: 1000px; margin: 0 auto; text-align: center;
-  background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12);
-  border-radius: 34px; padding: 50px 28px; box-shadow: var(--shadow);
-}
-.cta-card h2 { font-size: clamp(2rem, 5vw, 4rem); line-height: 1.02; margin-bottom: 14px; }
-.cta-card p { color: var(--muted); max-width: 720px; margin: 0 auto 26px; }
-footer { padding: 32px 22px; color: var(--muted); background: #070a0f; border-top: 1px solid rgba(255,255,255,0.08); }
-.footer-wrap { max-width: 1180px; margin: 0 auto; display: flex; justify-content: space-between; gap: 18px; flex-wrap: wrap; align-items: center; }
-.floating-call { position: fixed; right: 18px; bottom: 18px; z-index: 80; display: none; }
+    .nav-links a:hover {
+      color: var(--gold);
+    }
 
-@media (max-width: 900px) {
-  .hero-wrap, .why-grid { grid-template-columns: 1fr; }
-  .hero-card { transform: none; }
-  .services { grid-template-columns: repeat(2, 1fr); }
-  .process { grid-template-columns: repeat(2, 1fr); }
-  .nav-links { display: none; }
-}
-@media (max-width: 620px) {
-  .services, .process { grid-template-columns: 1fr; }
-  .nav { padding: 12px 16px; }
-  .brand span { font-size: 0.92rem; }
-  .nav .call-btn { display: none; }
-  .floating-call { display: block; }
-  h1 { letter-spacing: -2px; }
-  section, .cta { padding: 64px 16px; }
-}
+    .call-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: linear-gradient(135deg, var(--gold), #ffd66b);
+      color: #171717;
+      font-weight: 900;
+      padding: 12px 18px;
+      border-radius: 999px;
+      box-shadow: 0 12px 30px rgba(245,185,66,0.25);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      white-space: nowrap;
+    }
 
+    .call-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 16px 38px rgba(245,185,66,0.34);
+    }
+
+    .hero {
+      position: relative;
+      min-height: 86vh;
+      display: grid;
+      align-items: center;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at top left, rgba(245,185,66,0.2), transparent 30%),
+        radial-gradient(circle at bottom right, rgba(31,111,235,0.24), transparent 35%),
+        linear-gradient(135deg, #0d1117 0%, #111827 50%, #0d1117 100%);
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(255,255,255,0.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.035) 1px, transparent 1px);
+      background-size: 46px 46px;
+      mask-image: linear-gradient(to bottom, black, transparent 88%);
+    }
+
+    .hero-wrap {
+      position: relative;
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 76px 22px;
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 42px;
+      align-items: center;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 9px 14px;
+      border: 1px solid rgba(245,185,66,0.45);
+      background: rgba(245,185,66,0.09);
+      color: #ffe2a0;
+      border-radius: 999px;
+      font-weight: 800;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: clamp(2.6rem, 6vw, 5.7rem);
+      line-height: 0.95;
+      letter-spacing: -3px;
+      margin-bottom: 24px;
+    }
+
+    .highlight {
+      color: var(--gold);
+      text-shadow: 0 0 30px rgba(245,185,66,0.22);
+    }
+
+    .hero p {
+      color: var(--muted);
+      font-size: clamp(1.05rem, 2vw, 1.25rem);
+      max-width: 650px;
+      margin-bottom: 30px;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .secondary-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid rgba(255,255,255,0.18);
+      color: var(--white);
+      padding: 12px 18px;
+      border-radius: 999px;
+      font-weight: 800;
+      background: rgba(255,255,255,0.05);
+      transition: background 0.2s ease, transform 0.2s ease;
+    }
+
+    .secondary-btn:hover {
+      background: rgba(255,255,255,0.1);
+      transform: translateY(-2px);
+    }
+
+    .hero-card {
+      background: linear-gradient(180deg, rgba(255,255,255,0.1), rgba(255,255,255,0.035));
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 34px;
+      padding: 24px;
+      box-shadow: var(--shadow);
+      transform: rotate(1.5deg);
+    }
+
+    .job-card {
+      background: var(--panel);
+      border-radius: 28px;
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .job-photo {
+      min-height: 280px;
+      display: grid;
+      place-items: center;
+      background:
+        radial-gradient(circle at 22% 18%, rgba(255,255,255,0.35), transparent 18%),
+        linear-gradient(135deg, rgba(245,185,66,0.95), rgba(31,111,235,0.82)),
+        repeating-linear-gradient(45deg, transparent 0 12px, rgba(255,255,255,0.12) 12px 24px);
+      overflow: hidden;
+      position: relative;
+    }
+
+    .handyman-scene {
+      width: min(92%, 340px);
+      transform: translateY(8px);
+      filter: drop-shadow(0 20px 22px rgba(0,0,0,0.28));
+    }
+
+    .wave-arm {
+      transform-box: fill-box;
+      transform-origin: 24px 56px;
+      animation: waveHammer 1.45s ease-in-out infinite;
+    }
+
+    .hello-lines {
+      transform-origin: center;
+      animation: helloPulse 1.45s ease-in-out infinite;
+    }
+
+    @keyframes waveHammer {
+      0%, 100% {
+        transform: rotate(-8deg);
+      }
+      50% {
+        transform: rotate(18deg);
+      }
+    }
+
+    @keyframes helloPulse {
+      0%, 100% {
+        opacity: 0.3;
+        transform: scale(0.95);
+      }
+      50% {
+        opacity: 1;
+        transform: scale(1.08);
+      }
+    }
+
+    .job-body {
+      padding: 24px;
+    }
+
+    .job-body h3 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    .check-list {
+      list-style: none;
+      color: var(--muted);
+      display: grid;
+      gap: 10px;
+      margin-top: 18px;
+    }
+
+    .check-list li::before {
+      content: "✓";
+      color: var(--green);
+      font-weight: 900;
+      margin-right: 10px;
+    }
+
+    section {
+      padding: 86px 22px;
+    }
+
+    .container {
+      max-width: 1180px;
+      margin: 0 auto;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 44px;
+    }
+
+    .section-title span {
+      color: var(--gold);
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 0.85rem;
+    }
+
+    .section-title h2 {
+      font-size: clamp(2rem, 4vw, 3.4rem);
+      line-height: 1.05;
+      margin-top: 8px;
+      letter-spacing: -1.5px;
+    }
+
+    .section-title p {
+      color: var(--muted);
+      max-width: 700px;
+      margin: 14px auto 0;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .service-card {
+      position: relative;
+      background: linear-gradient(180deg, var(--panel), var(--panel-2));
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: var(--radius);
+      padding: 28px;
+      min-height: 230px;
+      overflow: hidden;
+      transition: transform 0.25s ease, border-color 0.25s ease;
+    }
+
+    .service-card::after {
+      content: "";
+      position: absolute;
+      width: 120px;
+      height: 120px;
+      right: -40px;
+      top: -40px;
+      background: rgba(245,185,66,0.13);
+      border-radius: 999px;
+    }
+
+    .service-card:hover {
+      transform: translateY(-8px);
+      border-color: rgba(245,185,66,0.45);
+    }
+
+    .icon {
+      font-size: 2.1rem;
+      margin-bottom: 18px;
+    }
+
+    .service-card h3 {
+      font-size: 1.35rem;
+      margin-bottom: 10px;
+    }
+
+    .service-card p {
+      color: var(--muted);
+    }
+
+    .why {
+      background: #090d13;
+    }
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 28px;
+      align-items: center;
+    }
+
+    .feature-box {
+      display: grid;
+      gap: 16px;
+    }
+
+    .feature {
+      display: flex;
+      gap: 16px;
+      padding: 20px;
+      border-radius: var(--radius);
+      background: rgba(255,255,255,0.045);
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .feature strong {
+      display: block;
+      margin-bottom: 4px;
+      font-size: 1.1rem;
+    }
+
+    .feature p {
+      color: var(--muted);
+    }
+
+    .big-number {
+      font-size: clamp(4rem, 10vw, 8rem);
+      color: var(--gold);
+      font-weight: 900;
+      line-height: 0.9;
+      letter-spacing: -6px;
+    }
+
+    .quote-panel {
+      background: linear-gradient(135deg, rgba(245,185,66,0.14), rgba(31,111,235,0.14));
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 32px;
+      padding: 38px;
+      box-shadow: var(--shadow);
+    }
+
+    .quote-panel h2 {
+      font-size: clamp(2rem, 4vw, 3.4rem);
+      line-height: 1;
+      margin-bottom: 16px;
+    }
+
+    .quote-panel p {
+      color: var(--muted);
+      margin-bottom: 24px;
+    }
+
+    .process {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      counter-reset: step;
+    }
+
+    .step {
+      background: var(--panel);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: var(--radius);
+      padding: 24px;
+    }
+
+    .step::before {
+      counter-increment: step;
+      content: "0" counter(step);
+      display: inline-grid;
+      place-items: center;
+      width: 44px;
+      height: 44px;
+      border-radius: 14px;
+      background: rgba(245,185,66,0.14);
+      color: var(--gold);
+      font-weight: 900;
+      margin-bottom: 18px;
+    }
+
+    .step h3 {
+      margin-bottom: 8px;
+    }
+
+    .step p {
+      color: var(--muted);
+    }
+
+    .cta {
+      padding: 86px 22px;
+      background: linear-gradient(135deg, rgba(245,185,66,0.18), rgba(31,111,235,0.18)), #0d1117;
+    }
+
+    .cta-card {
+      max-width: 1000px;
+      margin: 0 auto;
+      text-align: center;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 34px;
+      padding: 50px 28px;
+      box-shadow: var(--shadow);
+    }
+
+    .cta-card h2 {
+      font-size: clamp(2rem, 5vw, 4rem);
+      line-height: 1.02;
+      margin-bottom: 14px;
+    }
+
+    .cta-card p {
+      color: var(--muted);
+      max-width: 720px;
+      margin: 0 auto 26px;
+    }
+
+    footer {
+      padding: 32px 22px;
+      color: var(--muted);
+      background: #070a0f;
+      border-top: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .footer-wrap {
+      max-width: 1180px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .floating-call {
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      z-index: 80;
+      display: none;
+    }
+
+    @media (max-width: 900px) {
+      .hero-wrap,
+      .why-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-card {
+        transform: none;
+      }
+
+      .services {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .process {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .nav-links {
+        display: none;
+      }
+    }
+
+    @media (max-width: 620px) {
+      .services,
+      .process {
+        grid-template-columns: 1fr;
+      }
+
+      .nav {
+        padding: 12px 16px;
+      }
+
+      .brand span {
+        font-size: 0.92rem;
+      }
+
+      .nav .call-btn {
+        display: none;
+      }
+
+      .floating-call {
+        display: block;
+      }
+
+      h1 {
+        letter-spacing: -2px;
+      }
+
+      section,
+      .cta {
+        padding: 64px 16px;
+      }
+    }
   </style>
 </head>
+
 <body>
-  <div class="top-banner">Licensed & Insured • Roofing • Decks • Fencing • Drywall • Home Additions • Repairs</div>  <header>
+  <div class="top-banner">Licensed & Insured • Roofing • Decks • Fencing • Drywall • Home Additions • Repairs</div>
+
+  <header>
     <nav class="nav">
       <a class="brand" href="#top" aria-label="Michael Scott Handyman Services Home">
         <div class="logo">MS</div>
         <span>Michael Scott Handyman Services</span>
       </a>
+
       <div class="nav-links">
         <a href="#services">Services</a>
         <a href="#why">Why Choose Us</a>
         <a href="#process">How It Works</a>
       </div>
+
       <a class="call-btn" href="tel:4192763850">Call 419-276-3850</a>
     </nav>
-  </header>  <main id="top">
+  </header>
+
+  <main id="top">
     <section class="hero">
       <div class="hero-wrap">
         <div>
           <div class="badge">Built Right. Fixed Right. Done Right.</div>
           <h1>Quality Work for the Home You <span class="highlight">Count On</span></h1>
-          <p>From roof repairs and custom decks to fencing, drywall, home additions, and general handyman work, Michael Scott delivers dependable craftsmanship with professional service from start to finish.</p>
+          <p>
+            From roof repairs and custom decks to fencing, drywall, home additions, and general handyman work,
+            Michael Scott delivers dependable craftsmanship with professional service from start to finish.
+          </p>
+
           <div class="hero-actions">
             <a class="call-btn" href="tel:4192763850">Call Now for Pricing</a>
             <a class="secondary-btn" href="#services">See Services</a>
           </div>
-        </div><div class="hero-card">
-      <div class="job-card">
-        <div class="job-photo">
-          <svg class="handyman-scene" viewBox="0 0 360 320" role="img" aria-label="Cartoon handyman waving with a hammer">
-            <defs>
-              <linearGradient id="shirtGrad" x1="0" x2="1" y1="0" y2="1">
-                <stop offset="0%" stop-color="#2f80ed" />
-                <stop offset="100%" stop-color="#1453a8" />
-              </linearGradient>
-              <linearGradient id="beltGrad" x1="0" x2="1">
-                <stop offset="0%" stop-color="#5c3414" />
-                <stop offset="100%" stop-color="#2d1809" />
-              </linearGradient>
-            </defs>
-            <ellipse cx="180" cy="296" rx="112" ry="18" fill="rgba(0,0,0,0.24)" />
-            <g class="hello-lines" fill="none" stroke="#fff8d8" stroke-width="8" stroke-linecap="round">
-              <path d="M276 74 C300 48 326 44 342 48" />
-              <path d="M284 100 C314 92 334 100 350 114" />
-              <path d="M268 46 C276 22 294 12 314 8" />
-            </g>
-            <g>
-              <path d="M132 158 C102 177 85 210 76 246" fill="none" stroke="#ffd19a" stroke-width="24" stroke-linecap="round" />
-              <circle cx="75" cy="250" r="15" fill="#ffd19a" />
-            </g>
-            <g class="wave-arm">
-              <path d="M226 156 C252 132 270 100 283 70" fill="none" stroke="#ffd19a" stroke-width="24" stroke-linecap="round" />
-              <circle cx="286" cy="67" r="14" fill="#ffd19a" />
-              <g transform="translate(286 36) rotate(24)">
-                <rect x="-5" y="5" width="10" height="58" rx="5" fill="#6b3e1e" />
-                <rect x="-26" y="-4" width="52" height="18" rx="5" fill="#333" />
-                <rect x="13" y="-10" width="20" height="30" rx="4" fill="#555" />
-              </g>
-            </g>
-            <g>
-              <path d="M113 161 C126 121 232 121 247 161 L266 262 C229 284 132 284 95 262 Z" fill="url(#shirtGrad)" stroke="#0b2a55" stroke-width="5" />
-              <path d="M101 224 C140 239 222 239 260 224 L265 251 C221 273 137 273 95 251 Z" fill="url(#beltGrad)" />
-              <rect x="128" y="225" width="38" height="56" rx="8" fill="#8b551f" stroke="#2d1809" stroke-width="4" />
-              <rect x="194" y="225" width="38" height="56" rx="8" fill="#8b551f" stroke="#2d1809" stroke-width="4" />
-              <rect x="165" y="219" width="32" height="24" rx="5" fill="#f5b942" stroke="#2d1809" stroke-width="4" />
-              <path d="M139 244 L158 244 M201 244 L222 244" stroke="#f7d28a" stroke-width="5" stroke-linecap="round" />
-            </g>
-            <g>
-              <path d="M132 112 C132 72 228 72 228 112 L228 124 C213 136 150 136 132 124 Z" fill="#f5b942" stroke="#6b4700" stroke-width="5" />
-              <rect x="120" y="102" width="120" height="22" rx="11" fill="#d58b15" stroke="#6b4700" stroke-width="4" />
-              <circle cx="180" cy="127" r="49" fill="#ffd19a" stroke="#8a5626" stroke-width="5" />
-              <path d="M143 126 C148 103 162 92 180 92 C201 92 217 105 221 128 C208 116 193 110 174 111 C160 112 150 117 143 126Z" fill="#6b3e1e" />
-              <circle cx="162" cy="131" r="5" fill="#1d1d1d" />
-              <circle cx="199" cy="131" r="5" fill="#1d1d1d" />
-              <path d="M166 153 C176 162 191 162 202 153" fill="none" stroke="#9b4b2c" stroke-width="6" stroke-linecap="round" />
-              <path d="M151 118 L166 116 M194 116 L210 119" stroke="#3a2413" stroke-width="5" stroke-linecap="round" />
-            </g>
-            <g>
-              <path d="M121 262 L111 298" stroke="#24364a" stroke-width="25" stroke-linecap="round" />
-              <path d="M237 262 L249 298" stroke="#24364a" stroke-width="25" stroke-linecap="round" />
-              <path d="M92 302 L132 302" stroke="#171717" stroke-width="14" stroke-linecap="round" />
-              <path d="M231 302 L270 302" stroke="#171717" stroke-width="14" stroke-linecap="round" />
-            </g>
-          </svg>
         </div>
-        <div class="job-body">
-          <h3>Your Project. One Trusted Pro.</h3>
-          <p style="color: var(--muted);">Licensed, insured, and ready to help with small repairs, larger upgrades, and everything in between.</p>
-          <ul class="check-list">
-            <li>Call for pricing and project info</li>
-            <li>Clean, professional workmanship</li>
-            <li>Residential repairs and improvements</li>
-            <li>Honest communication from start to finish</li>
-          </ul>
+
+        <div class="hero-card">
+          <div class="job-card">
+            <div class="job-photo">
+              <svg class="handyman-scene" viewBox="0 0 360 320" role="img" aria-label="Cartoon handyman with a yellow hard hat waving with a hammer">
+                <defs>
+                  <linearGradient id="shirtGrad" x1="0" x2="1" y1="0" y2="1">
+                    <stop offset="0%" stop-color="#2f80ed" />
+                    <stop offset="100%" stop-color="#1453a8" />
+                  </linearGradient>
+
+                  <linearGradient id="beltGrad" x1="0" x2="1">
+                    <stop offset="0%" stop-color="#5c3414" />
+                    <stop offset="100%" stop-color="#2d1809" />
+                  </linearGradient>
+
+                  <linearGradient id="hardHatGrad" x1="0" x2="0" y1="0" y2="1">
+                    <stop offset="0%" stop-color="#ffe45c" />
+                    <stop offset="55%" stop-color="#f5b942" />
+                    <stop offset="100%" stop-color="#d88b00" />
+                  </linearGradient>
+                </defs>
+
+                <ellipse cx="180" cy="296" rx="112" ry="18" fill="rgba(0,0,0,0.24)" />
+
+                <g class="hello-lines" fill="none" stroke="#fff8d8" stroke-width="8" stroke-linecap="round">
+                  <path d="M276 74 C300 48 326 44 342 48" />
+                  <path d="M284 100 C314 92 334 100 350 114" />
+                  <path d="M268 46 C276 22 294 12 314 8" />
+                </g>
+
+                <g>
+                  <path d="M132 158 C102 177 85 210 76 246" fill="none" stroke="#ffd19a" stroke-width="24" stroke-linecap="round" />
+                  <circle cx="75" cy="250" r="15" fill="#ffd19a" />
+                </g>
+
+                <g class="wave-arm">
+                  <path d="M226 156 C252 132 270 100 283 70" fill="none" stroke="#ffd19a" stroke-width="24" stroke-linecap="round" />
+                  <circle cx="286" cy="67" r="14" fill="#ffd19a" />
+
+                  <g transform="translate(286 36) rotate(24)">
+                    <rect x="-5" y="5" width="10" height="58" rx="5" fill="#6b3e1e" />
+                    <rect x="-26" y="-4" width="52" height="18" rx="5" fill="#333" />
+                    <rect x="13" y="-10" width="20" height="30" rx="4" fill="#555" />
+                  </g>
+                </g>
+
+                <g>
+                  <path d="M113 161 C126 121 232 121 247 161 L266 262 C229 284 132 284 95 262 Z" fill="url(#shirtGrad)" stroke="#0b2a55" stroke-width="5" />
+                  <path d="M101 224 C140 239 222 239 260 224 L265 251 C221 273 137 273 95 251 Z" fill="url(#beltGrad)" />
+                  <rect x="128" y="225" width="38" height="56" rx="8" fill="#8b551f" stroke="#2d1809" stroke-width="4" />
+                  <rect x="194" y="225" width="38" height="56" rx="8" fill="#8b551f" stroke="#2d1809" stroke-width="4" />
+                  <rect x="165" y="219" width="32" height="24" rx="5" fill="#f5b942" stroke="#2d1809" stroke-width="4" />
+                  <path d="M139 244 L158 244 M201 244 L222 244" stroke="#f7d28a" stroke-width="5" stroke-linecap="round" />
+                </g>
+
+                <g>
+                  <circle cx="180" cy="133" r="50" fill="#ffd19a" stroke="#8a5626" stroke-width="5" />
+
+                  <path d="M126 114 C132 71 154 54 180 54 C206 54 228 71 234 114 Z" fill="url(#hardHatGrad)" stroke="#7a4d00" stroke-width="5" />
+                  <path d="M116 111 C137 101 223 101 244 111 L241 127 C214 120 146 120 119 127 Z" fill="#f5b942" stroke="#7a4d00" stroke-width="5" />
+                  <path d="M180 58 L180 106" stroke="#9a6400" stroke-width="6" stroke-linecap="round" />
+                  <path d="M152 65 C145 80 142 94 141 108" stroke="#9a6400" stroke-width="5" stroke-linecap="round" />
+                  <path d="M208 65 C215 80 218 94 219 108" stroke="#9a6400" stroke-width="5" stroke-linecap="round" />
+
+                  <path d="M141 127 C148 112 162 105 180 105 C200 105 215 113 222 128 C207 119 194 116 176 117 C161 118 149 121 141 127Z" fill="#6b3e1e" />
+                  <circle cx="162" cy="136" r="5" fill="#1d1d1d" />
+                  <circle cx="199" cy="136" r="5" fill="#1d1d1d" />
+                  <path d="M166 158 C176 167 191 167 202 158" fill="none" stroke="#9b4b2c" stroke-width="6" stroke-linecap="round" />
+                  <path d="M151 123 L166 121 M194 121 L210 124" stroke="#3a2413" stroke-width="5" stroke-linecap="round" />
+                </g>
+
+                <g>
+                  <path d="M121 262 L111 298" stroke="#24364a" stroke-width="25" stroke-linecap="round" />
+                  <path d="M237 262 L249 298" stroke="#24364a" stroke-width="25" stroke-linecap="round" />
+                  <path d="M92 302 L132 302" stroke="#171717" stroke-width="14" stroke-linecap="round" />
+                  <path d="M231 302 L270 302" stroke="#171717" stroke-width="14" stroke-linecap="round" />
+                </g>
+              </svg>
+            </div>
+
+            <div class="job-body">
+              <h3>Your Project. One Trusted Pro.</h3>
+              <p style="color: var(--muted);">
+                Licensed, insured, and ready to help with small repairs, larger upgrades, and everything in between.
+              </p>
+
+              <ul class="check-list">
+                <li>Call for pricing and project info</li>
+                <li>Clean, professional workmanship</li>
+                <li>Residential repairs and improvements</li>
+                <li>Honest communication from start to finish</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<section id="services">
-  <div class="container">
-    <div class="section-title">
-      <span>What We Do</span>
-      <h2>Handyman Services That Make Your Home Stronger, Sharper, and More Valuable</h2>
-      <p>Whether it is fixing damage, building something new, or finishing the job another contractor left behind, call Michael Scott for pricing and additional information.</p>
-    </div>
-    <div class="services">
-      <article class="service-card"><div class="icon">🏚️</div><h3>Roofing</h3><p>Roof repairs, patch work, leak concerns, and exterior protection to help keep your home dry and secure.</p></article>
-      <article class="service-card"><div class="icon">🪵</div><h3>Decks</h3><p>Deck repairs, rebuilds, upgrades, boards, railings, steps, and outdoor spaces made stronger and better looking.</p></article>
-      <article class="service-card"><div class="icon">🚧</div><h3>Fencing</h3><p>Fence installation and repairs for privacy, pets, property lines, curb appeal, and backyard upgrades.</p></article>
-      <article class="service-card"><div class="icon">🧱</div><h3>Drywall</h3><p>Drywall hanging, patching, repairs, finishing, texture touch-ups, and damage repair for walls and ceilings.</p></article>
-      <article class="service-card"><div class="icon">🔨</div><h3>Home Additions</h3><p>Room upgrades, added living space, framing help, finish work, and home improvement projects built with care.</p></article>
-      <article class="service-card"><div class="icon">🧰</div><h3>And More</h3><p>General repairs, punch-list jobs, maintenance work, trim, fixtures, small projects, and custom home needs.</p></article>
-    </div>
-  </div>
-</section>
+    <section id="services">
+      <div class="container">
+        <div class="section-title">
+          <span>What We Do</span>
+          <h2>Handyman Services That Make Your Home Stronger, Sharper, and More Valuable</h2>
+          <p>
+            Whether it is fixing damage, building something new, or finishing the job another contractor left behind,
+            call Michael Scott for pricing and additional information.
+          </p>
+        </div>
 
-<section class="why" id="why">
-  <div class="container why-grid">
-    <div class="quote-panel">
-      <div class="big-number">100%</div>
-      <h2>Professional, Dependable, and Ready to Work</h2>
-      <p>When your home needs attention, you need someone who can show up, understand the job, and get it handled the right way.</p>
-      <a class="call-btn" href="tel:4192763850">Call 419-276-3850</a>
-    </div>
-    <div class="feature-box">
-      <div class="feature"><div class="icon">✅</div><div><strong>Licensed & Insured</strong><p>Work with confidence knowing your project is being handled by a professional.</p></div></div>
-      <div class="feature"><div class="icon">⚡</div><div><strong>Fast Communication</strong><p>Call for pricing, availability, service questions, and additional project information.</p></div></div>
-      <div class="feature"><div class="icon">🏆</div><div><strong>Clean Finished Results</strong><p>Modern repairs and upgrades that improve the look, value, and function of your home.</p></div></div>
-      <div class="feature"><div class="icon">🛠️</div><div><strong>Big or Small Jobs</strong><p>From one repair to a full improvement project, Michael Scott can help get it done.</p></div></div>
-    </div>
-  </div>
-</section>
+        <div class="services">
+          <article class="service-card">
+            <div class="icon">🏚️</div>
+            <h3>Roofing</h3>
+            <p>Roof repairs, patch work, leak concerns, and exterior protection to help keep your home dry and secure.</p>
+          </article>
 
-<section id="process">
-  <div class="container">
-    <div class="section-title">
-      <span>Simple Process</span>
-      <h2>From First Call to Finished Job</h2>
-      <p>No complicated forms. No guessing. Just call, explain what you need, and get the next step.</p>
-    </div>
-    <div class="process">
-      <div class="step"><h3>Call</h3><p>Reach Michael directly at 419-276-3850.</p></div>
-      <div class="step"><h3>Describe the Job</h3><p>Share what needs repaired, built, replaced, or improved.</p></div>
-      <div class="step"><h3>Get Pricing Info</h3><p>Discuss pricing, scheduling, and project details.</p></div>
-      <div class="step"><h3>Get It Done</h3><p>Professional work completed with care and attention to detail.</p></div>
-    </div>
-  </div>
-</section>
+          <article class="service-card">
+            <div class="icon">🪵</div>
+            <h3>Decks</h3>
+            <p>Deck repairs, rebuilds, upgrades, boards, railings, steps, and outdoor spaces made stronger and better looking.</p>
+          </article>
 
-<section class="cta">
-  <div class="cta-card">
-    <h2>Need a Reliable Handyman?</h2>
-    <p>Roofing, decks, fencing, drywall, home additions, repairs, and more. Call today for pricing and additional information.</p>
-    <a class="call-btn" href="tel:4192763850">Call Michael Scott: 419-276-3850</a>
-  </div>
-</section>
+          <article class="service-card">
+            <div class="icon">🚧</div>
+            <h3>Fencing</h3>
+            <p>Fence installation and repairs for privacy, pets, property lines, curb appeal, and backyard upgrades.</p>
+          </article>
 
-  </main>  <footer>
+          <article class="service-card">
+            <div class="icon">🧱</div>
+            <h3>Drywall</h3>
+            <p>Drywall hanging, patching, repairs, finishing, texture touch-ups, and damage repair for walls and ceilings.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="icon">🔨</div>
+            <h3>Home Additions</h3>
+            <p>Room upgrades, added living space, framing help, finish work, and home improvement projects built with care.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="icon">🧰</div>
+            <h3>And More</h3>
+            <p>General repairs, punch-list jobs, maintenance work, trim, fixtures, small projects, and custom home needs.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="why" id="why">
+      <div class="container why-grid">
+        <div class="quote-panel">
+          <div class="big-number">100%</div>
+          <h2>Professional, Dependable, and Ready to Work</h2>
+          <p>
+            When your home needs attention, you need someone who can show up, understand the job,
+            and get it handled the right way.
+          </p>
+          <a class="call-btn" href="tel:4192763850">Call 419-276-3850</a>
+        </div>
+
+        <div class="feature-box">
+          <div class="feature">
+            <div class="icon">✅</div>
+            <div>
+              <strong>Licensed & Insured</strong>
+              <p>Work with confidence knowing your project is being handled by a professional.</p>
+            </div>
+          </div>
+
+          <div class="feature">
+            <div class="icon">⚡</div>
+            <div>
+              <strong>Fast Communication</strong>
+              <p>Call for pricing, availability, service questions, and additional project information.</p>
+            </div>
+          </div>
+
+          <div class="feature">
+            <div class="icon">🏆</div>
+            <div>
+              <strong>Clean Finished Results</strong>
+              <p>Modern repairs and upgrades that improve the look, value, and function of your home.</p>
+            </div>
+          </div>
+
+          <div class="feature">
+            <div class="icon">🛠️</div>
+            <div>
+              <strong>Big or Small Jobs</strong>
+              <p>From one repair to a full improvement project, Michael Scott can help get it done.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="process">
+      <div class="container">
+        <div class="section-title">
+          <span>Simple Process</span>
+          <h2>From First Call to Finished Job</h2>
+          <p>No complicated forms. No guessing. Just call, explain what you need, and get the next step.</p>
+        </div>
+
+        <div class="process">
+          <div class="step">
+            <h3>Call</h3>
+            <p>Reach Michael directly at 419-276-3850.</p>
+          </div>
+
+          <div class="step">
+            <h3>Describe the Job</h3>
+            <p>Share what needs repaired, built, replaced, or improved.</p>
+          </div>
+
+          <div class="step">
+            <h3>Get Pricing Info</h3>
+            <p>Discuss pricing, scheduling, and project details.</p>
+          </div>
+
+          <div class="step">
+            <h3>Get It Done</h3>
+            <p>Professional work completed with care and attention to detail.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="cta-card">
+        <h2>Need a Reliable Handyman?</h2>
+        <p>
+          Roofing, decks, fencing, drywall, home additions, repairs, and more.
+          Call today for pricing and additional information.
+        </p>
+        <a class="call-btn" href="tel:4192763850">Call Michael Scott: 419-276-3850</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
     <div class="footer-wrap">
       <div>© <span id="year"></span> Michael Scott Handyman Services. Licensed & Insured.</div>
       <a href="tel:4192763850">419-276-3850</a>
     </div>
-  </footer><a class="floating-call call-btn" href="tel:4192763850">Call Now</a>
+  </footer>
+
+  <a class="floating-call call-btn" href="tel:4192763850">Call Now</a>
 
   <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script></body>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
 </html>
