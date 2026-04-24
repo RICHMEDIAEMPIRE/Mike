@@ -243,7 +243,7 @@
 
     .hammer-arm {
       transform-box: fill-box;
-      transform-origin: 11px 44px;
+      transform-origin: 8px 38px;
       animation: hammerSwing 0.72s ease-in-out infinite;
     }
 
@@ -258,15 +258,15 @@
 
     @keyframes hammerSwing {
       0%, 100% {
-        transform: rotate(-18deg);
+        transform: rotate(-10deg);
       }
 
       45% {
-        transform: rotate(7deg);
+        transform: rotate(3deg);
       }
 
       57% {
-        transform: rotate(11deg);
+        transform: rotate(6deg);
       }
     }
 
@@ -652,7 +652,7 @@
         <div class="hero-card">
           <div class="job-card">
             <div class="job-photo">
-              <svg class="handyman-scene" viewBox="0 0 360 320" role="img" aria-label="Slim side-view handyman hammering a nail into a wall">
+              <svg class="handyman-scene" viewBox="0 0 360 320" role="img" aria-label="Side-view handyman properly holding a hammer by the handle and hammering a nail into a wall">
                 <defs>
                   <linearGradient id="shirtGrad" x1="0" x2="1" y1="0" y2="1">
                     <stop offset="0%" stop-color="#2f80ed" />
@@ -676,25 +676,26 @@
                   </linearGradient>
                 </defs>
 
-                <rect x="284" y="42" width="52" height="238" rx="10" fill="url(#wallGrad)" stroke="#8a6f4d" stroke-width="5" />
-                <path d="M294 78 H326 M294 118 H326 M294 158 H326 M294 198 H326 M294 238 H326" stroke="#b89b75" stroke-width="4" stroke-linecap="round" />
+                <rect x="286" y="42" width="50" height="238" rx="10" fill="url(#wallGrad)" stroke="#8a6f4d" stroke-width="5" />
+                <path d="M296 78 H326 M296 118 H326 M296 158 H326 M296 198 H326 M296 238 H326" stroke="#b89b75" stroke-width="4" stroke-linecap="round" />
 
                 <g class="nail-head">
-                  <line x1="262" y1="136" x2="303" y2="136" stroke="#444" stroke-width="5" stroke-linecap="round" />
-                  <circle cx="262" cy="136" r="6" fill="#555" />
+                  <line x1="258" y1="136" x2="304" y2="136" stroke="#444" stroke-width="5" stroke-linecap="round" />
+                  <circle cx="258" cy="136" r="6" fill="#555" />
                 </g>
 
                 <g class="impact-lines" fill="none" stroke="#fff8d8" stroke-width="7" stroke-linecap="round">
-                  <path d="M254 118 L238 105" />
-                  <path d="M251 136 L232 136" />
-                  <path d="M254 154 L238 169" />
+                  <path d="M252 118 L236 105" />
+                  <path d="M249 136 L230 136" />
+                  <path d="M252 154 L236 169" />
                 </g>
 
-                <ellipse cx="171" cy="297" rx="92" ry="16" fill="rgba(0,0,0,0.24)" />
+                <ellipse cx="170" cy="297" rx="92" ry="16" fill="rgba(0,0,0,0.24)" />
 
                 <g>
-                  <path d="M145 158 C127 178 118 210 113 240" fill="none" stroke="#ffd19a" stroke-width="17" stroke-linecap="round" />
-                  <circle cx="112" cy="244" r="11" fill="#ffd19a" />
+                  <path d="M145 158 C126 178 118 210 113 240" fill="none" stroke="#ffd19a" stroke-width="20" stroke-linecap="round" />
+                  <path d="M137 181 C127 199 121 219 118 237" fill="none" stroke="#e7a96e" stroke-width="4" stroke-linecap="round" opacity="0.55" />
+                  <circle cx="112" cy="244" r="12" fill="#ffd19a" />
                 </g>
 
                 <g>
@@ -709,16 +710,22 @@
                 </g>
 
                 <g class="hammer-arm">
-                  <path d="M207 158 C225 151 239 144 251 135" fill="none" stroke="#ffd19a" stroke-width="18" stroke-linecap="round" />
+                  <path d="M207 158 C224 149 236 142 247 135" fill="none" stroke="#ffd19a" stroke-width="21" stroke-linecap="round" />
+                  <path d="M218 154 C230 149 239 143 247 137" fill="none" stroke="#e7a96e" stroke-width="4" stroke-linecap="round" opacity="0.6" />
 
-                  <ellipse cx="254" cy="133" rx="11" ry="13" fill="#ffd19a" stroke="#b8773f" stroke-width="2" />
-
-                  <g transform="translate(252 125) rotate(78)">
-                    <rect x="-5" y="0" width="10" height="66" rx="5" fill="#6b3e1e" />
-                    <rect x="-24" y="-10" width="48" height="17" rx="5" fill="#333" />
-                    <rect x="11" y="-16" width="20" height="28" rx="4" fill="#555" />
-                    <path d="M-20 -8 L-28 -3 L-20 2" fill="#333" />
+                  <g transform="translate(246 133) rotate(-3)">
+                    <rect x="-6" y="-5" width="58" height="10" rx="5" fill="#6b3e1e" />
+                    <rect x="39" y="-16" width="20" height="32" rx="5" fill="#555" />
+                    <rect x="50" y="-11" width="28" height="22" rx="5" fill="#333" />
+                    <path d="M75 -10 L84 -4 L75 2" fill="#333" />
                   </g>
+
+                  <ellipse cx="249" cy="133" rx="12" ry="14" fill="#ffd19a" stroke="#b8773f" stroke-width="2" />
+                  <path d="M241 128 C246 124 253 124 258 129" fill="none" stroke="#b8773f" stroke-width="3" stroke-linecap="round" />
+                  <path d="M240 134 C246 137 253 137 259 134" fill="none" stroke="#b8773f" stroke-width="3" stroke-linecap="round" />
+
+                  <rect x="296" y="122" width="16" height="28" rx="4" fill="#555" />
+                  <rect x="282" y="127" width="32" height="18" rx="5" fill="#333" />
                 </g>
 
                 <g>
@@ -726,7 +733,7 @@
 
                   <ellipse cx="178" cy="124" rx="35" ry="44" fill="#ffd19a" stroke="#8a5626" stroke-width="5" />
 
-                  <path d="M207 124 L225 132 L206 139 Z" fill="#ffd19a" stroke="#8a5626" stroke-width="4" stroke-linejoin="round" />
+                  <circle cx="213" cy="132" r="9" fill="#ffd19a" stroke="#8a5626" stroke-width="4" />
 
                   <ellipse cx="146" cy="126" rx="8" ry="12" fill="#efb27c" stroke="#8a5626" stroke-width="3" />
 
