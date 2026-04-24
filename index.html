@@ -3,8 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Michael Scott Handyman Services | Licensed & Insured</title>
-  <meta name="description" content="Michael Scott Handyman Services provides licensed and insured roofing, decks, fencing, drywall, home additions, repairs, and more. Call 419-276-3850 for pricing and additional info." />
+
+  <meta
+    name="description"
+    content="Michael Scott Handyman Services provides licensed and insured roofing, decks, fencing, drywall, home additions, repairs, and more. Call 419-276-3850 for pricing and additional info."
+  />
 
   <style>
     :root {
@@ -57,7 +62,7 @@
       z-index: 50;
       backdrop-filter: blur(18px);
       background: rgba(13, 17, 23, 0.82);
-      border-bottom: 1px solid rgba(255,255,255,0.08);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
     }
 
     .nav {
@@ -76,18 +81,7 @@
       gap: 12px;
       font-weight: 900;
       letter-spacing: 0.4px;
-    }
-
-    .logo {
-      width: 44px;
-      height: 44px;
-      border-radius: 14px;
-      background: linear-gradient(135deg, var(--gold), #fff3b0);
-      color: #171717;
-      display: grid;
-      place-items: center;
-      font-weight: 900;
-      box-shadow: 0 8px 25px rgba(245,185,66,0.3);
+      font-size: 1.05rem;
     }
 
     .nav-links {
@@ -112,14 +106,14 @@
       font-weight: 900;
       padding: 12px 18px;
       border-radius: 999px;
-      box-shadow: 0 12px 30px rgba(245,185,66,0.25);
+      box-shadow: 0 12px 30px rgba(245, 185, 66, 0.25);
       transition: transform 0.2s ease, box-shadow 0.2s ease;
       white-space: nowrap;
     }
 
     .call-btn:hover {
       transform: translateY(-2px);
-      box-shadow: 0 16px 38px rgba(245,185,66,0.34);
+      box-shadow: 0 16px 38px rgba(245, 185, 66, 0.34);
     }
 
     .hero {
@@ -129,8 +123,8 @@
       align-items: center;
       overflow: hidden;
       background:
-        radial-gradient(circle at top left, rgba(245,185,66,0.2), transparent 30%),
-        radial-gradient(circle at bottom right, rgba(31,111,235,0.24), transparent 35%),
+        radial-gradient(circle at top left, rgba(245, 185, 66, 0.2), transparent 30%),
+        radial-gradient(circle at bottom right, rgba(31, 111, 235, 0.24), transparent 35%),
         linear-gradient(135deg, #0d1117 0%, #111827 50%, #0d1117 100%);
     }
 
@@ -139,8 +133,8 @@
       position: absolute;
       inset: 0;
       background-image:
-        linear-gradient(rgba(255,255,255,0.035) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255,255,255,0.035) 1px, transparent 1px);
+        linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
       background-size: 46px 46px;
       mask-image: linear-gradient(to bottom, black, transparent 88%);
     }
@@ -161,8 +155,8 @@
       align-items: center;
       gap: 8px;
       padding: 9px 14px;
-      border: 1px solid rgba(245,185,66,0.45);
-      background: rgba(245,185,66,0.09);
+      border: 1px solid rgba(245, 185, 66, 0.45);
+      background: rgba(245, 185, 66, 0.09);
       color: #ffe2a0;
       border-radius: 999px;
       font-weight: 800;
@@ -178,7 +172,7 @@
 
     .highlight {
       color: var(--gold);
-      text-shadow: 0 0 30px rgba(245,185,66,0.22);
+      text-shadow: 0 0 30px rgba(245, 185, 66, 0.22);
     }
 
     .hero p {
@@ -199,23 +193,23 @@
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      border: 1px solid rgba(255,255,255,0.18);
+      border: 1px solid rgba(255, 255, 255, 0.18);
       color: var(--white);
       padding: 12px 18px;
       border-radius: 999px;
       font-weight: 800;
-      background: rgba(255,255,255,0.05);
+      background: rgba(255, 255, 255, 0.05);
       transition: background 0.2s ease, transform 0.2s ease;
     }
 
     .secondary-btn:hover {
-      background: rgba(255,255,255,0.1);
+      background: rgba(255, 255, 255, 0.1);
       transform: translateY(-2px);
     }
 
     .hero-card {
-      background: linear-gradient(180deg, rgba(255,255,255,0.1), rgba(255,255,255,0.035));
-      border: 1px solid rgba(255,255,255,0.12);
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.035));
+      border: 1px solid rgba(255, 255, 255, 0.12);
       border-radius: 34px;
       padding: 24px;
       box-shadow: var(--shadow);
@@ -226,7 +220,7 @@
       background: var(--panel);
       border-radius: 28px;
       overflow: hidden;
-      border: 1px solid rgba(255,255,255,0.1);
+      border: 1px solid rgba(255, 255, 255, 0.1);
     }
 
     .job-photo {
@@ -234,9 +228,9 @@
       display: grid;
       place-items: center;
       background:
-        radial-gradient(circle at 22% 18%, rgba(255,255,255,0.35), transparent 18%),
-        linear-gradient(135deg, rgba(245,185,66,0.95), rgba(31,111,235,0.82)),
-        repeating-linear-gradient(45deg, transparent 0 12px, rgba(255,255,255,0.12) 12px 24px);
+        radial-gradient(circle at 22% 18%, rgba(255, 255, 255, 0.35), transparent 18%),
+        linear-gradient(135deg, rgba(245, 185, 66, 0.95), rgba(31, 111, 235, 0.82)),
+        repeating-linear-gradient(45deg, transparent 0 12px, rgba(255, 255, 255, 0.12) 12px 24px);
       overflow: hidden;
       position: relative;
     }
@@ -244,7 +238,7 @@
     .handyman-scene {
       width: min(92%, 340px);
       transform: translateY(8px);
-      filter: drop-shadow(0 20px 22px rgba(0,0,0,0.28));
+      filter: drop-shadow(0 20px 22px rgba(0, 0, 0, 0.28));
     }
 
     .wave-arm {
@@ -262,6 +256,7 @@
       0%, 100% {
         transform: rotate(-8deg);
       }
+
       50% {
         transform: rotate(18deg);
       }
@@ -272,6 +267,7 @@
         opacity: 0.3;
         transform: scale(0.95);
       }
+
       50% {
         opacity: 1;
         transform: scale(1.08);
@@ -346,7 +342,7 @@
     .service-card {
       position: relative;
       background: linear-gradient(180deg, var(--panel), var(--panel-2));
-      border: 1px solid rgba(255,255,255,0.1);
+      border: 1px solid rgba(255, 255, 255, 0.1);
       border-radius: var(--radius);
       padding: 28px;
       min-height: 230px;
@@ -361,13 +357,13 @@
       height: 120px;
       right: -40px;
       top: -40px;
-      background: rgba(245,185,66,0.13);
+      background: rgba(245, 185, 66, 0.13);
       border-radius: 999px;
     }
 
     .service-card:hover {
       transform: translateY(-8px);
-      border-color: rgba(245,185,66,0.45);
+      border-color: rgba(245, 185, 66, 0.45);
     }
 
     .icon {
@@ -405,8 +401,8 @@
       gap: 16px;
       padding: 20px;
       border-radius: var(--radius);
-      background: rgba(255,255,255,0.045);
-      border: 1px solid rgba(255,255,255,0.08);
+      background: rgba(255, 255, 255, 0.045);
+      border: 1px solid rgba(255, 255, 255, 0.08);
     }
 
     .feature strong {
@@ -428,8 +424,8 @@
     }
 
     .quote-panel {
-      background: linear-gradient(135deg, rgba(245,185,66,0.14), rgba(31,111,235,0.14));
-      border: 1px solid rgba(255,255,255,0.12);
+      background: linear-gradient(135deg, rgba(245, 185, 66, 0.14), rgba(31, 111, 235, 0.14));
+      border: 1px solid rgba(255, 255, 255, 0.12);
       border-radius: 32px;
       padding: 38px;
       box-shadow: var(--shadow);
@@ -455,7 +451,7 @@
 
     .step {
       background: var(--panel);
-      border: 1px solid rgba(255,255,255,0.1);
+      border: 1px solid rgba(255, 255, 255, 0.1);
       border-radius: var(--radius);
       padding: 24px;
     }
@@ -468,7 +464,7 @@
       width: 44px;
       height: 44px;
       border-radius: 14px;
-      background: rgba(245,185,66,0.14);
+      background: rgba(245, 185, 66, 0.14);
       color: var(--gold);
       font-weight: 900;
       margin-bottom: 18px;
@@ -484,15 +480,15 @@
 
     .cta {
       padding: 86px 22px;
-      background: linear-gradient(135deg, rgba(245,185,66,0.18), rgba(31,111,235,0.18)), #0d1117;
+      background: linear-gradient(135deg, rgba(245, 185, 66, 0.18), rgba(31, 111, 235, 0.18)), #0d1117;
     }
 
     .cta-card {
       max-width: 1000px;
       margin: 0 auto;
       text-align: center;
-      background: rgba(255,255,255,0.06);
-      border: 1px solid rgba(255,255,255,0.12);
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.12);
       border-radius: 34px;
       padding: 50px 28px;
       box-shadow: var(--shadow);
@@ -514,7 +510,7 @@
       padding: 32px 22px;
       color: var(--muted);
       background: #070a0f;
-      border-top: 1px solid rgba(255,255,255,0.08);
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
     }
 
     .footer-wrap {
@@ -593,12 +589,13 @@
 </head>
 
 <body>
-  <div class="top-banner">Licensed & Insured • Roofing • Decks • Fencing • Drywall • Home Additions • Repairs</div>
+  <div class="top-banner">
+    Licensed & Insured • Roofing • Decks • Fencing • Drywall • Home Additions • Repairs
+  </div>
 
   <header>
     <nav class="nav">
       <a class="brand" href="#top" aria-label="Michael Scott Handyman Services Home">
-        <div class="logo">MS</div>
         <span>Michael Scott Handyman Services</span>
       </a>
 
@@ -617,7 +614,11 @@
       <div class="hero-wrap">
         <div>
           <div class="badge">Built Right. Fixed Right. Done Right.</div>
-          <h1>Quality Work for the Home You <span class="highlight">Count On</span></h1>
+
+          <h1>
+            Quality Work for the Home You <span class="highlight">Count On</span>
+          </h1>
+
           <p>
             From roof repairs and custom decks to fencing, drywall, home additions, and general handyman work,
             Michael Scott delivers dependable craftsmanship with professional service from start to finish.
@@ -711,6 +712,7 @@
 
             <div class="job-body">
               <h3>Your Project. One Trusted Pro.</h3>
+
               <p style="color: var(--muted);">
                 Licensed, insured, and ready to help with small repairs, larger upgrades, and everything in between.
               </p>
@@ -731,7 +733,11 @@
       <div class="container">
         <div class="section-title">
           <span>What We Do</span>
-          <h2>Handyman Services That Make Your Home Stronger, Sharper, and More Valuable</h2>
+
+          <h2>
+            Handyman Services That Make Your Home Stronger, Sharper, and More Valuable
+          </h2>
+
           <p>
             Whether it is fixing damage, building something new, or finishing the job another contractor left behind,
             call Michael Scott for pricing and additional information.
@@ -742,37 +748,49 @@
           <article class="service-card">
             <div class="icon">🏚️</div>
             <h3>Roofing</h3>
-            <p>Roof repairs, patch work, leak concerns, and exterior protection to help keep your home dry and secure.</p>
+            <p>
+              Roof repairs, patch work, leak concerns, and exterior protection to help keep your home dry and secure.
+            </p>
           </article>
 
           <article class="service-card">
             <div class="icon">🪵</div>
             <h3>Decks</h3>
-            <p>Deck repairs, rebuilds, upgrades, boards, railings, steps, and outdoor spaces made stronger and better looking.</p>
+            <p>
+              Deck repairs, rebuilds, upgrades, boards, railings, steps, and outdoor spaces made stronger and better looking.
+            </p>
           </article>
 
           <article class="service-card">
             <div class="icon">🚧</div>
             <h3>Fencing</h3>
-            <p>Fence installation and repairs for privacy, pets, property lines, curb appeal, and backyard upgrades.</p>
+            <p>
+              Fence installation and repairs for privacy, pets, property lines, curb appeal, and backyard upgrades.
+            </p>
           </article>
 
           <article class="service-card">
             <div class="icon">🧱</div>
             <h3>Drywall</h3>
-            <p>Drywall hanging, patching, repairs, finishing, texture touch-ups, and damage repair for walls and ceilings.</p>
+            <p>
+              Drywall hanging, patching, repairs, finishing, texture touch-ups, and damage repair for walls and ceilings.
+            </p>
           </article>
 
           <article class="service-card">
             <div class="icon">🔨</div>
             <h3>Home Additions</h3>
-            <p>Room upgrades, added living space, framing help, finish work, and home improvement projects built with care.</p>
+            <p>
+              Room upgrades, added living space, framing help, finish work, and home improvement projects built with care.
+            </p>
           </article>
 
           <article class="service-card">
             <div class="icon">🧰</div>
             <h3>And More</h3>
-            <p>General repairs, punch-list jobs, maintenance work, trim, fixtures, small projects, and custom home needs.</p>
+            <p>
+              General repairs, punch-list jobs, maintenance work, trim, fixtures, small projects, and custom home needs.
+            </p>
           </article>
         </div>
       </div>
@@ -782,11 +800,14 @@
       <div class="container why-grid">
         <div class="quote-panel">
           <div class="big-number">100%</div>
+
           <h2>Professional, Dependable, and Ready to Work</h2>
+
           <p>
             When your home needs attention, you need someone who can show up, understand the job,
             and get it handled the right way.
           </p>
+
           <a class="call-btn" href="tel:4192763850">Call 419-276-3850</a>
         </div>
 
@@ -861,18 +882,25 @@
     <section class="cta">
       <div class="cta-card">
         <h2>Need a Reliable Handyman?</h2>
+
         <p>
           Roofing, decks, fencing, drywall, home additions, repairs, and more.
           Call today for pricing and additional information.
         </p>
-        <a class="call-btn" href="tel:4192763850">Call Michael Scott: 419-276-3850</a>
+
+        <a class="call-btn" href="tel:4192763850">
+          Call Michael Scott: 419-276-3850
+        </a>
       </div>
     </section>
   </main>
 
   <footer>
     <div class="footer-wrap">
-      <div>© <span id="year"></span> Michael Scott Handyman Services. Licensed & Insured.</div>
+      <div>
+        © <span id="year"></span> Michael Scott Handyman Services. Licensed & Insured.
+      </div>
+
       <a href="tel:4192763850">419-276-3850</a>
     </div>
   </footer>
