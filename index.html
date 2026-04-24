@@ -8,7 +8,7 @@
 
   <meta
     name="description"
-    content="Michael Scott Handyman Services provides licensed and insured roofing, decks, fencing, drywall, home additions, repairs, and more. Call 419-276-3850 for pricing and additional info."
+    content="Michael Scott Handyman Services provides licensed and insured roofing, decks, fencing, drywall, kitchen and bathroom remodels, garage door installation, siding, flooring, cabinetry, and more. Call 419-429-9245 for pricing and additional info."
   />
 
   <style>
@@ -241,36 +241,54 @@
       filter: drop-shadow(0 20px 22px rgba(0, 0, 0, 0.28));
     }
 
-    .wave-arm {
+    .hammer-arm {
       transform-box: fill-box;
       transform-origin: 24px 56px;
-      animation: waveHammer 1.45s ease-in-out infinite;
+      animation: hammerSwing 0.78s ease-in-out infinite;
     }
 
-    .hello-lines {
+    .impact-lines {
       transform-origin: center;
-      animation: helloPulse 1.45s ease-in-out infinite;
+      animation: impactFlash 0.78s ease-in-out infinite;
     }
 
-    @keyframes waveHammer {
+    .nail-head {
+      animation: nailTap 0.78s ease-in-out infinite;
+    }
+
+    @keyframes hammerSwing {
       0%, 100% {
-        transform: rotate(-8deg);
+        transform: rotate(-28deg);
       }
 
-      50% {
+      45% {
+        transform: rotate(14deg);
+      }
+
+      58% {
         transform: rotate(18deg);
       }
     }
 
-    @keyframes helloPulse {
-      0%, 100% {
-        opacity: 0.3;
-        transform: scale(0.95);
+    @keyframes impactFlash {
+      0%, 40%, 100% {
+        opacity: 0.15;
+        transform: scale(0.9);
       }
 
-      50% {
+      50%, 62% {
         opacity: 1;
-        transform: scale(1.08);
+        transform: scale(1.1);
+      }
+    }
+
+    @keyframes nailTap {
+      0%, 45%, 100% {
+        transform: translateX(0);
+      }
+
+      55%, 65% {
+        transform: translateX(4px);
       }
     }
 
@@ -590,7 +608,7 @@
 
 <body>
   <div class="top-banner">
-    Licensed & Insured • Roofing • Decks • Fencing • Drywall • Home Additions • Repairs
+    Licensed & Insured • Roofing • Decks • Fencing • Drywall • Remodels • Siding • Flooring • Cabinetry
   </div>
 
   <header>
@@ -605,7 +623,7 @@
         <a href="#process">How It Works</a>
       </div>
 
-      <a class="call-btn" href="tel:4192763850">Call 419-276-3850</a>
+      <a class="call-btn" href="tel:4194299245">Call 419-429-9245</a>
     </nav>
   </header>
 
@@ -613,19 +631,20 @@
     <section class="hero">
       <div class="hero-wrap">
         <div>
-          <div class="badge">Built Right. Fixed Right. Done Right.</div>
+          <div class="badge">Built Right. Fixed Right. Finished Right.</div>
 
           <h1>
             Quality Work for the Home You <span class="highlight">Count On</span>
           </h1>
 
           <p>
-            From roof repairs and custom decks to fencing, drywall, home additions, and general handyman work,
-            Michael Scott delivers dependable craftsmanship with professional service from start to finish.
+            From roofing, decks, fencing, and drywall to kitchen and bathroom remodels, garage door installation,
+            siding, flooring, cabinetry, and more, Michael Scott brings dependable workmanship to the repairs,
+            upgrades, and improvements your home needs.
           </p>
 
           <div class="hero-actions">
-            <a class="call-btn" href="tel:4192763850">Call Now for Pricing</a>
+            <a class="call-btn" href="tel:4194299245">Call Now for Pricing</a>
             <a class="secondary-btn" href="#services">See Services</a>
           </div>
         </div>
@@ -633,7 +652,7 @@
         <div class="hero-card">
           <div class="job-card">
             <div class="job-photo">
-              <svg class="handyman-scene" viewBox="0 0 360 320" role="img" aria-label="Cartoon handyman with a yellow hard hat waving with a hammer">
+              <svg class="handyman-scene" viewBox="0 0 360 320" role="img" aria-label="Cartoon handyman with a yellow hard hat pounding a nail into a wall">
                 <defs>
                   <linearGradient id="shirtGrad" x1="0" x2="1" y1="0" y2="1">
                     <stop offset="0%" stop-color="#2f80ed" />
@@ -652,24 +671,30 @@
                   </linearGradient>
                 </defs>
 
-                <ellipse cx="180" cy="296" rx="112" ry="18" fill="rgba(0,0,0,0.24)" />
-
-                <g class="hello-lines" fill="none" stroke="#fff8d8" stroke-width="8" stroke-linecap="round">
-                  <path d="M276 74 C300 48 326 44 342 48" />
-                  <path d="M284 100 C314 92 334 100 350 114" />
-                  <path d="M268 46 C276 22 294 12 314 8" />
+                <rect x="276" y="64" width="58" height="210" rx="12" fill="#efe2cc" stroke="#9b7b55" stroke-width="5" />
+                <path d="M286 91 H324 M286 132 H324 M286 173 H324 M286 214 H324" stroke="#c5a986" stroke-width="4" stroke-linecap="round" />
+                <g class="impact-lines" fill="none" stroke="#fff8d8" stroke-width="7" stroke-linecap="round">
+                  <path d="M257 118 L241 105" />
+                  <path d="M256 138 L238 142" />
+                  <path d="M260 157 L244 174" />
                 </g>
+                <g class="nail-head">
+                  <line x1="267" y1="134" x2="299" y2="134" stroke="#3c3c3c" stroke-width="5" stroke-linecap="round" />
+                  <circle cx="267" cy="134" r="6" fill="#555" />
+                </g>
+
+                <ellipse cx="180" cy="296" rx="112" ry="18" fill="rgba(0,0,0,0.24)" />
 
                 <g>
                   <path d="M132 158 C102 177 85 210 76 246" fill="none" stroke="#ffd19a" stroke-width="24" stroke-linecap="round" />
                   <circle cx="75" cy="250" r="15" fill="#ffd19a" />
                 </g>
 
-                <g class="wave-arm">
-                  <path d="M226 156 C252 132 270 100 283 70" fill="none" stroke="#ffd19a" stroke-width="24" stroke-linecap="round" />
-                  <circle cx="286" cy="67" r="14" fill="#ffd19a" />
+                <g class="hammer-arm">
+                  <path d="M226 156 C250 145 264 130 276 112" fill="none" stroke="#ffd19a" stroke-width="24" stroke-linecap="round" />
+                  <circle cx="279" cy="109" r="14" fill="#ffd19a" />
 
-                  <g transform="translate(286 36) rotate(24)">
+                  <g transform="translate(278 94) rotate(72)">
                     <rect x="-5" y="5" width="10" height="58" rx="5" fill="#6b3e1e" />
                     <rect x="-26" y="-4" width="52" height="18" rx="5" fill="#333" />
                     <rect x="13" y="-10" width="20" height="30" rx="4" fill="#555" />
@@ -714,13 +739,13 @@
               <h3>Your Project. One Trusted Pro.</h3>
 
               <p style="color: var(--muted);">
-                Licensed, insured, and ready to help with small repairs, larger upgrades, and everything in between.
+                Licensed, insured, and ready to help with repairs, remodels, installations, upgrades, and finish work.
               </p>
 
               <ul class="check-list">
                 <li>Call for pricing and project info</li>
                 <li>Clean, professional workmanship</li>
-                <li>Residential repairs and improvements</li>
+                <li>Repairs, remodels, and installations</li>
                 <li>Honest communication from start to finish</li>
               </ul>
             </div>
@@ -735,12 +760,13 @@
           <span>What We Do</span>
 
           <h2>
-            Handyman Services That Make Your Home Stronger, Sharper, and More Valuable
+            Repairs, Remodels, Installations, and Home Improvements Done Right
           </h2>
 
           <p>
-            Whether it is fixing damage, building something new, or finishing the job another contractor left behind,
-            call Michael Scott for pricing and additional information.
+            Michael Scott Handyman Services handles the projects that keep your home looking better,
+            working better, and lasting longer. Call for roofing, decks, fencing, drywall, remodels,
+            garage doors, siding, flooring, cabinetry, and more.
           </p>
         </div>
 
@@ -755,17 +781,9 @@
 
           <article class="service-card">
             <div class="icon">🪵</div>
-            <h3>Decks</h3>
+            <h3>Decks & Fencing</h3>
             <p>
-              Deck repairs, rebuilds, upgrades, boards, railings, steps, and outdoor spaces made stronger and better looking.
-            </p>
-          </article>
-
-          <article class="service-card">
-            <div class="icon">🚧</div>
-            <h3>Fencing</h3>
-            <p>
-              Fence installation and repairs for privacy, pets, property lines, curb appeal, and backyard upgrades.
+              Deck repairs, rebuilds, rails, stairs, privacy fencing, pet fencing, and backyard upgrades.
             </p>
           </article>
 
@@ -773,15 +791,47 @@
             <div class="icon">🧱</div>
             <h3>Drywall</h3>
             <p>
-              Drywall hanging, patching, repairs, finishing, texture touch-ups, and damage repair for walls and ceilings.
+              Drywall hanging, patching, repairs, finishing, texture touch-ups, and wall or ceiling damage repair.
             </p>
           </article>
 
           <article class="service-card">
-            <div class="icon">🔨</div>
-            <h3>Home Additions</h3>
+            <div class="icon">🚿</div>
+            <h3>Kitchen & Bathroom Remodels</h3>
             <p>
-              Room upgrades, added living space, framing help, finish work, and home improvement projects built with care.
+              Remodel help for kitchens, bathrooms, fixtures, finishes, repairs, upgrades, and improved home function.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <div class="icon">🚪</div>
+            <h3>Garage Door Installation</h3>
+            <p>
+              Garage door installation, replacement support, hardware work, adjustments, and related repair needs.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <div class="icon">🏠</div>
+            <h3>Siding</h3>
+            <p>
+              Siding repair, replacement sections, exterior trim help, and curb appeal improvements.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <div class="icon">🪚</div>
+            <h3>Flooring</h3>
+            <p>
+              Flooring installation and repair support for rooms, transitions, trim, subfloor concerns, and finish work.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <div class="icon">🗄️</div>
+            <h3>Cabinetry</h3>
+            <p>
+              Cabinet installs, repairs, adjustments, hardware, trim, storage upgrades, and built-in improvement work.
             </p>
           </article>
 
@@ -808,7 +858,7 @@
             and get it handled the right way.
           </p>
 
-          <a class="call-btn" href="tel:4192763850">Call 419-276-3850</a>
+          <a class="call-btn" href="tel:4194299245">Call 419-429-9245</a>
         </div>
 
         <div class="feature-box">
@@ -858,12 +908,12 @@
         <div class="process">
           <div class="step">
             <h3>Call</h3>
-            <p>Reach Michael directly at 419-276-3850.</p>
+            <p>Reach Michael directly at 419-429-9245.</p>
           </div>
 
           <div class="step">
             <h3>Describe the Job</h3>
-            <p>Share what needs repaired, built, replaced, or improved.</p>
+            <p>Share what needs repaired, remodeled, installed, replaced, or improved.</p>
           </div>
 
           <div class="step">
@@ -884,12 +934,12 @@
         <h2>Need a Reliable Handyman?</h2>
 
         <p>
-          Roofing, decks, fencing, drywall, home additions, repairs, and more.
-          Call today for pricing and additional information.
+          Roofing, decks, fencing, drywall, kitchen and bathroom remodels, garage door installation,
+          siding, flooring, cabinetry, repairs, and more. Call today for pricing and additional information.
         </p>
 
-        <a class="call-btn" href="tel:4192763850">
-          Call Michael Scott: 419-276-3850
+        <a class="call-btn" href="tel:4194299245">
+          Call Michael Scott: 419-429-9245
         </a>
       </div>
     </section>
@@ -901,11 +951,11 @@
         © <span id="year"></span> Michael Scott Handyman Services. Licensed & Insured.
       </div>
 
-      <a href="tel:4192763850">419-276-3850</a>
+      <a href="tel:4194299245">419-429-9245</a>
     </div>
   </footer>
 
-  <a class="floating-call call-btn" href="tel:4192763850">Call Now</a>
+  <a class="floating-call call-btn" href="tel:4194299245">Call Now</a>
 
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
