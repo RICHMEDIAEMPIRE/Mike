@@ -61,7 +61,7 @@
       top: 0;
       z-index: 50;
       backdrop-filter: blur(18px);
-      background: rgba(13, 17, 23, 0.82);
+      background: rgba(13, 17, 23, 0.86);
       border-bottom: 1px solid rgba(255, 255, 255, 0.08);
     }
 
@@ -224,71 +224,70 @@
     }
 
     .job-photo {
-      min-height: 280px;
+      min-height: 360px;
       display: grid;
       place-items: center;
       background:
-        radial-gradient(circle at 22% 18%, rgba(255, 255, 255, 0.35), transparent 18%),
-        linear-gradient(135deg, rgba(245, 185, 66, 0.95), rgba(31, 111, 235, 0.82)),
-        repeating-linear-gradient(45deg, transparent 0 12px, rgba(255, 255, 255, 0.12) 12px 24px);
+        radial-gradient(circle at 18% 15%, rgba(255,255,255,0.35), transparent 18%),
+        linear-gradient(135deg, rgba(245,185,66,0.9), rgba(31,111,235,0.85));
       overflow: hidden;
       position: relative;
     }
 
     .handyman-scene {
-      width: min(92%, 340px);
-      transform: translateY(8px);
-      filter: drop-shadow(0 20px 22px rgba(0, 0, 0, 0.28));
+      width: min(96%, 420px);
+      height: auto;
+      filter: drop-shadow(0 20px 22px rgba(0,0,0,0.28));
     }
 
-    .hammer-arm {
+    .hammer-group {
       transform-box: fill-box;
-      transform-origin: 18px 42px;
-      animation: hammerSwing 0.75s ease-in-out infinite;
+      transform-origin: 110px 210px;
+      animation: hammerStrike 0.9s ease-in-out infinite;
     }
 
-    .impact-lines {
+    .nail {
+      animation: nailPush 1.8s ease-in-out infinite;
+    }
+
+    .impact {
+      animation: impactBlink 0.9s ease-in-out infinite;
       transform-origin: center;
-      animation: impactFlash 0.75s ease-in-out infinite;
     }
 
-    .nail-head {
-      animation: nailDrive 1.5s ease-in-out infinite;
-    }
-
-    @keyframes hammerSwing {
+    @keyframes hammerStrike {
       0%, 100% {
-        transform: rotate(-14deg) translateX(-8px) translateY(2px);
+        transform: rotate(-18deg) translate(-5px, -4px);
       }
 
-      45% {
-        transform: rotate(-2deg) translateX(3px) translateY(0);
+      48% {
+        transform: rotate(3deg) translate(5px, 3px);
       }
 
-      58% {
-        transform: rotate(2deg) translateX(11px) translateY(0);
-      }
-    }
-
-    @keyframes impactFlash {
-      0%, 40%, 100% {
-        opacity: 0.08;
-        transform: scale(0.9);
-      }
-
-      50%, 62% {
-        opacity: 1;
-        transform: scale(1.08);
+      60% {
+        transform: rotate(5deg) translate(8px, 4px);
       }
     }
 
-    @keyframes nailDrive {
-      0%, 45% {
+    @keyframes nailPush {
+      0%, 48% {
         transform: translateX(0);
       }
 
-      55%, 100% {
+      60%, 100% {
         transform: translateX(9px);
+      }
+    }
+
+    @keyframes impactBlink {
+      0%, 42%, 100% {
+        opacity: 0;
+        transform: scale(0.9);
+      }
+
+      52%, 64% {
+        opacity: 1;
+        transform: scale(1.1);
       }
     }
 
@@ -360,7 +359,7 @@
     .service-card {
       position: relative;
       background: linear-gradient(180deg, var(--panel), var(--panel-2));
-      border: 1px solid rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255,255,255,0.1);
       border-radius: var(--radius);
       padding: 28px;
       min-height: 230px;
@@ -375,13 +374,13 @@
       height: 120px;
       right: -40px;
       top: -40px;
-      background: rgba(245, 185, 66, 0.13);
+      background: rgba(245,185,66,0.13);
       border-radius: 999px;
     }
 
     .service-card:hover {
       transform: translateY(-8px);
-      border-color: rgba(245, 185, 66, 0.45);
+      border-color: rgba(245,185,66,0.45);
     }
 
     .icon {
@@ -419,8 +418,8 @@
       gap: 16px;
       padding: 20px;
       border-radius: var(--radius);
-      background: rgba(255, 255, 255, 0.045);
-      border: 1px solid rgba(255, 255, 255, 0.08);
+      background: rgba(255,255,255,0.045);
+      border: 1px solid rgba(255,255,255,0.08);
     }
 
     .feature strong {
@@ -442,8 +441,8 @@
     }
 
     .quote-panel {
-      background: linear-gradient(135deg, rgba(245, 185, 66, 0.14), rgba(31, 111, 235, 0.14));
-      border: 1px solid rgba(255, 255, 255, 0.12);
+      background: linear-gradient(135deg, rgba(245,185,66,0.14), rgba(31,111,235,0.14));
+      border: 1px solid rgba(255,255,255,0.12);
       border-radius: 32px;
       padding: 38px;
       box-shadow: var(--shadow);
@@ -469,7 +468,7 @@
 
     .step {
       background: var(--panel);
-      border: 1px solid rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255,255,255,0.1);
       border-radius: var(--radius);
       padding: 24px;
     }
@@ -482,7 +481,7 @@
       width: 44px;
       height: 44px;
       border-radius: 14px;
-      background: rgba(245, 185, 66, 0.14);
+      background: rgba(245,185,66,0.14);
       color: var(--gold);
       font-weight: 900;
       margin-bottom: 18px;
@@ -498,15 +497,15 @@
 
     .cta {
       padding: 86px 22px;
-      background: linear-gradient(135deg, rgba(245, 185, 66, 0.18), rgba(31, 111, 235, 0.18)), #0d1117;
+      background: linear-gradient(135deg, rgba(245,185,66,0.18), rgba(31,111,235,0.18)), #0d1117;
     }
 
     .cta-card {
       max-width: 1000px;
       margin: 0 auto;
       text-align: center;
-      background: rgba(255, 255, 255, 0.06);
-      border: 1px solid rgba(255, 255, 255, 0.12);
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.12);
       border-radius: 34px;
       padding: 50px 28px;
       box-shadow: var(--shadow);
@@ -528,7 +527,7 @@
       padding: 32px 22px;
       color: var(--muted);
       background: #070a0f;
-      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      border-top: 1px solid rgba(255,255,255,0.08);
     }
 
     .footer-wrap {
@@ -652,127 +651,113 @@
         <div class="hero-card">
           <div class="job-card">
             <div class="job-photo">
-              <svg class="handyman-scene" viewBox="0 0 360 320" role="img" aria-label="Side-view handyman using a claw hammer to pound a nail into a wall">
+              <svg class="handyman-scene" viewBox="0 0 480 430" role="img" aria-label="Side view handyman holding a claw hammer and pounding a nail into a board">
                 <defs>
-                  <linearGradient id="shirtGrad" x1="0" x2="1" y1="0" y2="1">
-                    <stop offset="0%" stop-color="#2f80ed" />
-                    <stop offset="100%" stop-color="#1453a8" />
-                  </linearGradient>
-
-                  <linearGradient id="beltGrad" x1="0" x2="1">
-                    <stop offset="0%" stop-color="#5c3414" />
-                    <stop offset="100%" stop-color="#2d1809" />
-                  </linearGradient>
-
                   <linearGradient id="hardHatGrad" x1="0" x2="0" y1="0" y2="1">
                     <stop offset="0%" stop-color="#ffe45c" />
                     <stop offset="55%" stop-color="#f5b942" />
-                    <stop offset="100%" stop-color="#d88b00" />
+                    <stop offset="100%" stop-color="#d88900" />
                   </linearGradient>
 
                   <linearGradient id="wallGrad" x1="0" x2="1">
-                    <stop offset="0%" stop-color="#f5ead8" />
-                    <stop offset="100%" stop-color="#d9c6aa" />
+                    <stop offset="0%" stop-color="#f8e9ce" />
+                    <stop offset="100%" stop-color="#d7b982" />
+                  </linearGradient>
+
+                  <linearGradient id="shirtGrad" x1="0" x2="1">
+                    <stop offset="0%" stop-color="#0f6edb" />
+                    <stop offset="100%" stop-color="#064da8" />
                   </linearGradient>
                 </defs>
 
-                <!-- Wall farther right -->
-                <rect x="318" y="38" width="34" height="244" rx="10" fill="url(#wallGrad)" stroke="#8a6f4d" stroke-width="5" />
-                <path d="M326 74 H345 M326 114 H345 M326 154 H345 M326 194 H345 M326 234 H345" stroke="#b89b75" stroke-width="4" stroke-linecap="round" />
+                <ellipse cx="178" cy="392" rx="96" ry="14" fill="rgba(0,0,0,0.25)" />
 
-                <!-- Nail raised higher -->
-                <g class="nail-head">
-                  <line x1="286" y1="118" x2="321" y2="118" stroke="#3d3d3d" stroke-width="5" stroke-linecap="round" />
-                  <circle cx="286" cy="118" r="6" fill="#565656" stroke="#222" stroke-width="2" />
-                  <path d="M321 114 L329 118 L321 122 Z" fill="#333" />
+                <!-- Board / wall -->
+                <rect x="376" y="54" width="44" height="330" rx="5" fill="url(#wallGrad)" stroke="#9a7337" stroke-width="5" />
+                <path d="M389 96 H408 M389 137 H408 M389 178 H408 M389 219 H408 M389 260 H408 M389 301 H408 M389 342 H408" stroke="#aa7a39" stroke-width="5" stroke-linecap="round" />
+
+                <!-- Nail -->
+                <g class="nail">
+                  <line x1="345" y1="103" x2="380" y2="103" stroke="#242424" stroke-width="6" stroke-linecap="round" />
+                  <circle cx="345" cy="103" r="7" fill="#5d5d5d" stroke="#202020" stroke-width="3" />
                 </g>
 
-                <!-- Impact flash at the nail -->
-                <g class="impact-lines" fill="none" stroke="#fff8d8" stroke-width="7" stroke-linecap="round">
-                  <path d="M278 101 L262 88" />
-                  <path d="M275 118 L253 118" />
-                  <path d="M278 135 L262 150" />
-                </g>
-
-                <ellipse cx="142" cy="297" rx="84" ry="16" fill="rgba(0,0,0,0.24)" />
-
-                <!-- Back arm -->
-                <g>
-                  <path d="M118 158 C101 179 94 212 91 240" fill="none" stroke="#ffd19a" stroke-width="20" stroke-linecap="round" />
-                  <path d="M112 181 C104 200 99 220 96 237" fill="none" stroke="#e7a96e" stroke-width="4" stroke-linecap="round" opacity="0.55" />
-                  <circle cx="90" cy="244" r="12" fill="#ffd19a" />
-                </g>
-
-                <!-- Slim body moved left -->
-                <g>
-                  <path d="M118 155 C127 124 178 123 188 156 L199 260 C176 276 128 276 105 260 Z" fill="url(#shirtGrad)" stroke="#0b2a55" stroke-width="5" />
-                  <path d="M107 222 C128 232 177 232 199 222 L203 250 C178 266 128 266 103 250 Z" fill="url(#beltGrad)" />
-
-                  <rect x="118" y="225" width="27" height="50" rx="7" fill="#8b551f" stroke="#2d1809" stroke-width="4" />
-                  <rect x="163" y="225" width="27" height="50" rx="7" fill="#8b551f" stroke="#2d1809" stroke-width="4" />
-                  <rect x="144" y="218" width="25" height="22" rx="5" fill="#f5b942" stroke="#2d1809" stroke-width="4" />
-                  <path d="M126 243 L139 243 M169 243 L184 243" stroke="#f7d28a" stroke-width="4" stroke-linecap="round" />
-                </g>
-
-                <!-- Arm and side-view claw hammer -->
-                <g class="hammer-arm">
-                  <!-- Toned arm reaching upward toward raised nail -->
-                  <path d="M181 158 C205 144 224 132 244 124" fill="none" stroke="#ffd19a" stroke-width="21" stroke-linecap="round" />
-                  <path d="M194 152 C212 142 228 132 244 126" fill="none" stroke="#e7a96e" stroke-width="4" stroke-linecap="round" opacity="0.6" />
-
-                  <!-- Long wooden handle angled back into hand -->
-                  <line x1="232" y1="143" x2="270" y2="122" stroke="#6b3e1e" stroke-width="11" stroke-linecap="round" />
-                  <line x1="232" y1="143" x2="270" y2="122" stroke="#3a1f0c" stroke-width="3" stroke-linecap="round" opacity="0.5" />
-
-                  <!-- Hand gripping lower handle -->
-                  <ellipse cx="231" cy="144" rx="12" ry="14" fill="#ffd19a" stroke="#b8773f" stroke-width="2" />
-                  <path d="M224 139 C229 135 237 135 242 140" fill="none" stroke="#b8773f" stroke-width="3" stroke-linecap="round" />
-                  <path d="M223 145 C229 148 237 148 243 145" fill="none" stroke="#b8773f" stroke-width="3" stroke-linecap="round" />
-
-                  <!-- Side-view claw hammer head. Face hits the nail head. -->
-                  <g>
-                    <!-- Main steel head -->
-                    <rect x="258" y="105" width="31" height="24" rx="6" fill="#303030" stroke="#1d1d1d" stroke-width="3" />
-                    <!-- Striking face -->
-                    <rect x="285" y="108" width="12" height="18" rx="3" fill="#5f5f5f" stroke="#242424" stroke-width="2" />
-                    <!-- Neck where handle meets head -->
-                    <rect x="257" y="120" width="14" height="10" rx="4" fill="#444" stroke="#242424" stroke-width="2" />
-                    <!-- Curved claw on back side -->
-                    <path d="M260 109 C248 98 235 101 231 113" fill="none" stroke="#303030" stroke-width="8" stroke-linecap="round" />
-                    <path d="M260 126 C248 138 235 134 231 121" fill="none" stroke="#303030" stroke-width="8" stroke-linecap="round" />
-                    <!-- Split tips of claw -->
-                    <path d="M232 112 L225 109" stroke="#303030" stroke-width="5" stroke-linecap="round" />
-                    <path d="M232 122 L225 126" stroke="#303030" stroke-width="5" stroke-linecap="round" />
-                  </g>
-                </g>
-
-                <!-- Head moved left -->
-                <g>
-                  <rect x="147" y="142" width="18" height="24" rx="8" fill="#e9aa72" />
-
-                  <ellipse cx="153" cy="124" rx="35" ry="44" fill="#ffd19a" stroke="#8a5626" stroke-width="5" />
-                  <circle cx="188" cy="132" r="9" fill="#ffd19a" stroke="#8a5626" stroke-width="4" />
-                  <ellipse cx="121" cy="126" rx="8" ry="12" fill="#efb27c" stroke="#8a5626" stroke-width="3" />
-
-                  <path d="M119 117 C124 90 146 79 172 91 C155 97 137 105 126 126 Z" fill="#6b3e1e" />
-
-                  <path d="M114 105 C119 68 137 53 159 53 C182 53 200 70 205 106 Z" fill="url(#hardHatGrad)" stroke="#7a4d00" stroke-width="5" />
-                  <path d="M107 103 C128 94 188 94 213 104 L210 119 C186 113 134 113 110 119 Z" fill="#f5b942" stroke="#7a4d00" stroke-width="5" />
-                  <path d="M158 57 L158 99" stroke="#9a6400" stroke-width="6" stroke-linecap="round" />
-                  <path d="M135 64 C129 77 126 90 126 102" stroke="#9a6400" stroke-width="5" stroke-linecap="round" />
-                  <path d="M182 66 C189 79 192 91 193 103" stroke="#9a6400" stroke-width="5" stroke-linecap="round" />
-
-                  <circle cx="168" cy="126" r="4.5" fill="#1d1d1d" />
-                  <path d="M163 151 C172 157 182 155 189 149" fill="none" stroke="#9b4b2c" stroke-width="5" stroke-linecap="round" />
-                  <path d="M159 115 L174 116" stroke="#3a2413" stroke-width="5" stroke-linecap="round" />
+                <g class="impact" fill="none" stroke="#fff2c7" stroke-width="7" stroke-linecap="round">
+                  <path d="M338 82 L321 64" />
+                  <path d="M329 101 L305 96" />
+                  <path d="M337 122 L318 140" />
                 </g>
 
                 <!-- Legs -->
                 <g>
-                  <path d="M123 260 L114 299" stroke="#24364a" stroke-width="19" stroke-linecap="round" />
-                  <path d="M177 260 L188 299" stroke="#24364a" stroke-width="19" stroke-linecap="round" />
-                  <path d="M96 303 L129 303" stroke="#171717" stroke-width="13" stroke-linecap="round" />
-                  <path d="M180 303 L214 303" stroke="#171717" stroke-width="13" stroke-linecap="round" />
+                  <path d="M142 293 L105 373" stroke="#123458" stroke-width="28" stroke-linecap="round" />
+                  <path d="M198 291 L205 373" stroke="#123458" stroke-width="28" stroke-linecap="round" />
+                  <path d="M92 387 H141" stroke="#202020" stroke-width="18" stroke-linecap="round" />
+                  <path d="M190 387 H239" stroke="#202020" stroke-width="18" stroke-linecap="round" />
+                </g>
+
+                <!-- Body -->
+                <g>
+                  <path d="M114 186 C130 160 195 160 212 190 L219 294 C191 315 126 315 101 294 Z" fill="url(#shirtGrad)" stroke="#073975" stroke-width="5" />
+                  <path d="M102 276 C128 288 193 288 219 276 L221 302 C192 321 127 321 99 302 Z" fill="#5c3213" stroke="#291406" stroke-width="4" />
+                  <rect x="104" y="281" width="42" height="60" rx="9" fill="#9d5a1f" stroke="#371b08" stroke-width="4" />
+                  <rect x="144" y="276" width="34" height="34" rx="7" fill="#f5b942" stroke="#371b08" stroke-width="5" />
+                  <rect x="182" y="281" width="35" height="48" rx="8" fill="#8b4d1b" stroke="#371b08" stroke-width="4" />
+                </g>
+
+                <!-- Back arm -->
+                <g>
+                  <path d="M109 190 C83 222 73 262 66 315" fill="none" stroke="#ffd19a" stroke-width="22" stroke-linecap="round" />
+                  <circle cx="65" cy="318" r="14" fill="#ffd19a" />
+                </g>
+
+                <!-- Head and hard hat -->
+                <g>
+                  <rect x="143" y="159" width="21" height="31" rx="9" fill="#e9aa72" />
+                  <circle cx="152" cy="134" r="42" fill="#ffd19a" stroke="#8a5626" stroke-width="5" />
+                  <circle cx="194" cy="139" r="12" fill="#ffd19a" stroke="#8a5626" stroke-width="4" />
+                  <ellipse cx="116" cy="138" rx="10" ry="15" fill="#efb27c" stroke="#8a5626" stroke-width="3" />
+                  <path d="M115 130 C122 96 151 83 184 96 C159 101 134 112 122 146 Z" fill="#5b351d" />
+
+                  <path d="M105 112 C115 68 143 49 171 52 C202 55 225 81 230 118 Z" fill="url(#hardHatGrad)" stroke="#7a4d00" stroke-width="5" />
+                  <path d="M95 112 C125 98 204 101 242 117 L238 134 C199 122 142 121 101 134 Z" fill="#f5b942" stroke="#7a4d00" stroke-width="5" />
+                  <path d="M167 56 L169 108" stroke="#9a6400" stroke-width="7" stroke-linecap="round" />
+                  <path d="M134 68 C126 83 121 99 120 114" stroke="#9a6400" stroke-width="6" stroke-linecap="round" />
+                  <path d="M199 75 C210 91 216 105 218 120" stroke="#9a6400" stroke-width="6" stroke-linecap="round" />
+
+                  <circle cx="174" cy="133" r="5" fill="#171717" />
+                  <path d="M163 156 C174 166 190 164 201 153" fill="none" stroke="#94451e" stroke-width="5" stroke-linecap="round" />
+                </g>
+
+                <!-- Arms and claw hammer -->
+                <g class="hammer-group">
+                  <!-- Upper / front arm -->
+                  <path d="M198 190 C233 170 259 145 282 118" fill="none" stroke="#ffd19a" stroke-width="24" stroke-linecap="round" />
+                  <!-- Forearm support / second hand look -->
+                  <path d="M182 196 C221 178 250 154 278 126" fill="none" stroke="#ffd19a" stroke-width="19" stroke-linecap="round" opacity="0.95" />
+
+                  <!-- Hammer handle, angled correctly -->
+                  <line x1="270" y1="225" x2="318" y2="100" stroke="#8b4e1c" stroke-width="16" stroke-linecap="round" />
+                  <line x1="270" y1="225" x2="318" y2="100" stroke="#4a260b" stroke-width="4" stroke-linecap="round" opacity="0.55" />
+
+                  <!-- Hand gripping handle -->
+                  <ellipse cx="273" cy="198" rx="18" ry="25" fill="#ffd19a" stroke="#9f6736" stroke-width="4" transform="rotate(22 273 198)" />
+                  <path d="M259 184 C274 177 288 184 294 197" fill="none" stroke="#9f6736" stroke-width="4" stroke-linecap="round" />
+                  <path d="M255 197 C271 203 286 204 298 196" fill="none" stroke="#9f6736" stroke-width="4" stroke-linecap="round" />
+
+                  <!-- Side-view claw hammer head near nail -->
+                  <g>
+                    <!-- Steel neck -->
+                    <rect x="308" y="89" width="22" height="28" rx="5" fill="#5b5b5b" stroke="#242424" stroke-width="4" />
+                    <!-- Main head -->
+                    <path d="M294 79 C315 75 341 79 356 94 L350 115 C330 104 311 103 289 112 Z" fill="#626262" stroke="#242424" stroke-width="5" />
+                    <!-- Striking face pointed at nail -->
+                    <rect x="350" y="94" width="24" height="23" rx="4" fill="#3d3d3d" stroke="#202020" stroke-width="4" />
+                    <!-- Curved claw -->
+                    <path d="M294 81 C274 84 260 99 256 119 C273 108 286 107 300 111" fill="none" stroke="#242424" stroke-width="12" stroke-linecap="round" />
+                    <path d="M290 83 C273 87 264 99 261 111" fill="none" stroke="#8b8b8b" stroke-width="5" stroke-linecap="round" />
+                    <path d="M257 119 L249 128" stroke="#242424" stroke-width="7" stroke-linecap="round" />
+                  </g>
                 </g>
               </svg>
             </div>
@@ -801,9 +786,7 @@
         <div class="section-title">
           <span>What We Do</span>
 
-          <h2>
-            Repairs, Remodels, Installations, and Home Improvements Done Right
-          </h2>
+          <h2>Repairs, Remodels, Installations, and Home Improvements Done Right</h2>
 
           <p>
             Michael Scott Handyman Services handles the projects that keep your home looking better,
@@ -816,73 +799,55 @@
           <article class="service-card">
             <div class="icon">🏚️</div>
             <h3>Roofing</h3>
-            <p>
-              Roof repairs, patch work, leak concerns, and exterior protection to help keep your home dry and secure.
-            </p>
+            <p>Roof repairs, patch work, leak concerns, and exterior protection to help keep your home dry and secure.</p>
           </article>
 
           <article class="service-card">
             <div class="icon">🪵</div>
             <h3>Decks & Fencing</h3>
-            <p>
-              Deck repairs, rebuilds, rails, stairs, privacy fencing, pet fencing, and backyard upgrades.
-            </p>
+            <p>Deck repairs, rebuilds, rails, stairs, privacy fencing, pet fencing, and backyard upgrades.</p>
           </article>
 
           <article class="service-card">
             <div class="icon">🧱</div>
             <h3>Drywall</h3>
-            <p>
-              Drywall hanging, patching, repairs, finishing, texture touch-ups, and wall or ceiling damage repair.
-            </p>
+            <p>Drywall hanging, patching, repairs, finishing, texture touch-ups, and wall or ceiling damage repair.</p>
           </article>
 
           <article class="service-card">
             <div class="icon">🚿</div>
             <h3>Kitchen & Bathroom Remodels</h3>
-            <p>
-              Remodel help for kitchens, bathrooms, fixtures, finishes, repairs, upgrades, and improved home function.
-            </p>
+            <p>Remodel help for kitchens, bathrooms, fixtures, finishes, repairs, upgrades, and improved home function.</p>
           </article>
 
           <article class="service-card">
             <div class="icon">🚪</div>
             <h3>Garage Door Installation</h3>
-            <p>
-              Garage door installation, replacement support, hardware work, adjustments, and related repair needs.
-            </p>
+            <p>Garage door installation, replacement support, hardware work, adjustments, and related repair needs.</p>
           </article>
 
           <article class="service-card">
             <div class="icon">🏠</div>
             <h3>Siding</h3>
-            <p>
-              Siding repair, replacement sections, exterior trim help, and curb appeal improvements.
-            </p>
+            <p>Siding repair, replacement sections, exterior trim help, and curb appeal improvements.</p>
           </article>
 
           <article class="service-card">
             <div class="icon">🪚</div>
             <h3>Flooring</h3>
-            <p>
-              Flooring installation and repair support for rooms, transitions, trim, subfloor concerns, and finish work.
-            </p>
+            <p>Flooring installation and repair support for rooms, transitions, trim, subfloor concerns, and finish work.</p>
           </article>
 
           <article class="service-card">
             <div class="icon">🗄️</div>
             <h3>Cabinetry</h3>
-            <p>
-              Cabinet installs, repairs, adjustments, hardware, trim, storage upgrades, and built-in improvement work.
-            </p>
+            <p>Cabinet installs, repairs, adjustments, hardware, trim, storage upgrades, and built-in improvement work.</p>
           </article>
 
           <article class="service-card">
             <div class="icon">🧰</div>
             <h3>And More</h3>
-            <p>
-              General repairs, punch-list jobs, maintenance work, trim, fixtures, small projects, and custom home needs.
-            </p>
+            <p>General repairs, punch-list jobs, maintenance work, trim, fixtures, small projects, and custom home needs.</p>
           </article>
         </div>
       </div>
